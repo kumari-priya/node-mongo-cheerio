@@ -1,5 +1,4 @@
 $(document).on("click", "#scrape", function() {
-  alert("hi");
     $.ajax({
         method: "GET",
         url: "/scrape",

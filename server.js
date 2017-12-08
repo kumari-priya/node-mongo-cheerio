@@ -26,7 +26,7 @@ app.engine("handlebars", exphbs({
 app.set("view engine", "handlebars");
 
 mongoose.Promise = Promise;
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect("mongodb://localhost/nyTimes", {
   useMongoClient: true
 });
 
